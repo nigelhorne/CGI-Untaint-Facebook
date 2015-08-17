@@ -1,5 +1,8 @@
 Revision history for CGI-Untaint-Facebook
 
+0.12	Sun Aug 16 20:30:31 EDT 2015
+	Someone has taken the xyzzy page
+
 0.11	Sat 25 Jan 15:02:24 EST 2014
 	Deal with 301 and 302 from Facebook
 	Bumped minimum version of Net::SSLeay that's needed to connect to
