@@ -118,7 +118,7 @@ sub is_valid {
 					return 1;
 				}
 			}
-			carp "redirect to $location";
+			carp "redirect to from $url to $location";
 		} elsif($error_code != 404) {
 			# Probably the certs file is wrong, or there
 			# was a timeout
@@ -180,7 +180,7 @@ L<http://search.cpan.org/dist/CGI-Untaint-Facebook>
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright 2012-2014 Nigel Horne.
+Copyright 2012-2015 Nigel Horne.
 
 This program is released under the following licence: GPL
 
