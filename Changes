@@ -1,5 +1,8 @@
 Revision history for CGI-Untaint-Facebook
 
+0.13	Wed Nov  4 11:05:49 EST 2015
+	More helpful message on redirect
+
 0.12	Sun Aug 16 20:30:31 EDT 2015
 	Someone has taken the xyzzy page
 
