@@ -67,6 +67,10 @@ sub is_valid {
 		return 0;
 	}
 
+	if($value =~ /\s/) {
+		return 0;
+	}
+
 	# Allow URLs such as https://m.facebook.com/#!/groups/6000106799?ref=bookmark&__user=764645045)
 	if($value =~ /([a-zA-Z0-9\-\/\.:\?&_=#!]+)/) {
 		$value = $1;
@@ -118,7 +122,7 @@ sub is_valid {
 					return 1;
 				}
 			}
-			carp "redirect to from $url to $location";
+			carp "redirect from $url to $location";
 		} elsif($error_code != 404) {
 			# Probably the certs file is wrong, or there
 			# was a timeout
@@ -180,7 +184,7 @@ L<http://search.cpan.org/dist/CGI-Untaint-Facebook>
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright 2012-2015 Nigel Horne.
+Copyright 2012-2016 Nigel Horne.
 
 This program is released under the following licence: GPL
 
