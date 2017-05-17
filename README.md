@@ -4,7 +4,7 @@ Validate a string is a valid Facebook URL or ID
 
 # VERSION
 
-Version 0.13
+Version 0.14
 
 # SYNOPSIS
 
@@ -72,6 +72,6 @@ You can also look for information at:
 
 # LICENSE AND COPYRIGHT
 
-Copyright 2012-2016 Nigel Horne.
+Copyright 2012-2017 Nigel Horne.
 
 This program is released under the following licence: GPL
