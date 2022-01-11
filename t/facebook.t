@@ -22,7 +22,7 @@ FACEBOOK: {
 	    url9 => 'fru90verfe890vrh89',
 	    url10 => '  rockvillebb ',
 	    url11 => 'https://m.facebook.com/#!/groups/6000106799?ref=bookmark&__user=764645045',
-	    url12 => 'https://www.facebook.com/Sandhurst-Silver-Band-297412250355073',
+	    url12 => 'https://www.facebook.com/sandhurstsilverband',
 	    url13 => 'https://www.facebook.com/KentPolice Band',
 	};
 
@@ -63,7 +63,7 @@ FACEBOOK: {
 	is($c, $vars->{'url11'}, 'CGI arguments are accepted');
 
 	$c = $untainter->extract(-as_Facebook => 'url12');
-	is($c, 'https://www.facebook.com/Sandhurst-Silver-Band-297412250355073', 'Sandhurst');
+	is($c, 'https://www.facebook.com/sandhurstsilverband', 'Sandhurst');
 
 	$c = $untainter->extract(-as_Facebook => 'url13');
 	is($c, undef, 'space in Facebook name');
