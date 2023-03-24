@@ -118,6 +118,9 @@ sub is_valid {
 				return 1;
 			} else {
 				my $e = uri_escape($url);
+				if($location =~ /^https?:\/\/(www|m).facebook.com\/login\/\?next=\Q$e\E/) {
+					return 1;
+				}
 				if($location =~ /^https?:\/\/(www|m).facebook.com\/login.php\?next=\Q$e\E/) {
 					return 1;
 				}
@@ -126,7 +129,7 @@ sub is_valid {
 		} elsif($error_code != 404) {
 			# Probably the certs file is wrong, or there
 			# was a timeout
-			carp "$url: " . $webdoc->status_line;
+			carp "$url: ", $webdoc->status_line();
 		}
 		return 0;
 	}

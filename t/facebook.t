@@ -51,7 +51,7 @@ FACEBOOK: {
 	is($c, 'https://www.facebook.com/rockvillebb', 'rockvillebb');
 
 	$c = $untainter->extract(-as_Facebook => 'url8');
-	is($c, 'https://www.facebook.com/Green-Mountain-Brass-Band-307389872688637', 'Green Mountain Brass Band');
+	is($c, 'https://www.facebook.com/people/Green-Mountain-Brass-Band/307389872688637/', 'Green Mountain Brass Band');
 
 	$c = $untainter->extract(-as_Facebook => 'url9');
 	is($c, undef, 'non existent page');

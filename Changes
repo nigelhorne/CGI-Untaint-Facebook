@@ -1,5 +1,8 @@
 Revision history for CGI-Untaint-Facebook
 
+0.16
+	Facebook has a new login URL
+
 0.15	Tue 10 Dec 09:50:11 EST 2019
 	RT#91825
 
