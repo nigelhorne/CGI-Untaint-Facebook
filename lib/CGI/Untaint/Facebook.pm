@@ -18,11 +18,11 @@ CGI::Untaint::Facebook - Validate a string is a valid Facebook URL or ID
 
 =head1 VERSION
 
-Version 0.15
+Version 0.16
 
 =cut
 
-our $VERSION = '0.15';
+our $VERSION = '0.16';
 
 =head1 SYNOPSIS
 
