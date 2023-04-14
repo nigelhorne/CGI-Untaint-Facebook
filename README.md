@@ -37,7 +37,7 @@ Nigel Horne, `<njh at bandsman.co.uk>`
 # BUGS
 
 Please report any bugs or feature requests to `bug-cgi-untaint-url-facebook at rt.cpan.org`, or through
-the web interface at [http://rt.cpan.org/NoAuth/ReportBug.html?Queue=CGI-Untaint-Twitter](http://rt.cpan.org/NoAuth/ReportBug.html?Queue=CGI-Untaint-Twitter).  I will be notified, and then you'll
+the web interface at [http://rt.cpan.org/NoAuth/ReportBug.html?Queue=CGI-Untaint-Facebook](http://rt.cpan.org/NoAuth/ReportBug.html?Queue=CGI-Untaint-Facebook).  I will be notified, and then you'll
 automatically be notified of progress on your bug as I make changes.
 
 # SEE ALSO

@@ -1,5 +1,8 @@
 Revision history for CGI-Untaint-Facebook
 
+0.17
+	Fix documentation copy and paste error
+
 0.16	April 13, 2023 at 09:51:11 PM EDT
 	Facebook has a new login URL
 	Facebook has changed its code for invalid sites
