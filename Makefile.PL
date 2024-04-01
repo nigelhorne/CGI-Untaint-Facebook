@@ -1,6 +1,6 @@
 use strict;
 use warnings;
-use ExtUtils::MakeMaker;
+use ExtUtils::MakeMaker 6.64;	# 6.64 for TEST_REQUIRES
 use IO::Socket::INET;
 
 my $s = IO::Socket::INET->new(
@@ -34,6 +34,9 @@ WriteMakefile(
 	'Mozilla::CA' => 20120823,
 	'LWP::Protocol::https' => 6.03,
 	'Net::SSLeay' => 1.57,
+    }, TEST_REQUIRES => {
+	'Test::Most' => 0,
+	'Test::Needs' => 0
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean               => { FILES => 'CGI-Untaint-Facebook-*' },
