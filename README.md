@@ -36,9 +36,15 @@ Nigel Horne, `<njh at bandsman.co.uk>`
 
 # BUGS
 
-Please report any bugs or feature requests to `bug-cgi-untaint-url-facebook at rt.cpan.org`, or through
-the web interface at [http://rt.cpan.org/NoAuth/ReportBug.html?Queue=CGI-Untaint-Facebook](http://rt.cpan.org/NoAuth/ReportBug.html?Queue=CGI-Untaint-Facebook).  I will be notified, and then you'll
-automatically be notified of progress on your bug as I make changes.
+Since Facebook now redirects all lookups to it's login page,
+you can no longer tell if a page exists or not,
+which I believe renders this module obselete.
+If I'm wrong, please issue a pull request at
+[https://github.com/nigelhorne/CGI-Untaint-Facebook](https://github.com/nigelhorne/CGI-Untaint-Facebook).
+
+Please report any bugs or feature requests to `bug-cgi-untaint-url-facebook at rt.cpan.org`,
+or through the web interface at [http://rt.cpan.org/NoAuth/ReportBug.html?Queue=CGI-Untaint-Facebook](http://rt.cpan.org/NoAuth/ReportBug.html?Queue=CGI-Untaint-Facebook).
+I will be notified, and then you'll automatically be notified of progress on your bug as I make changes.
 
 # SEE ALSO
 
