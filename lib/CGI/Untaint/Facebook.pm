@@ -134,7 +134,7 @@ sub is_valid {
 		}
 		return 0;
 	}
-	my $response = $browser->decoded_content();
+	my $response = $webdoc->decoded_content();
 	if($response =~ /This content isn't available at the moment/mis) {
 		return 0;
 	}
