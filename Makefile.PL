@@ -13,7 +13,7 @@ unless($s) {
 
 WriteMakefile(
     NAME                => 'CGI::Untaint::Facebook',
-    AUTHOR              => q{Nigel Horne <njh@bandsman.co.uk>},
+    AUTHOR              => q{Nigel Horne <njh@nigelhorne.com>},
     VERSION_FROM        => 'lib/CGI/Untaint/Facebook.pm',
     ABSTRACT_FROM        => 'lib/CGI/Untaint/Facebook.pm',
     ($ExtUtils::MakeMaker::VERSION >= 6.3002

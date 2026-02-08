@@ -95,7 +95,7 @@ sub is_valid {
 		$url = $value;
 	}
 
-	my $request = HTTP::Request->new('HEAD' => $url);
+	my $request = HTTP::Request->new('GET' => $url);
 	$request->header('Accept' => 'text/html');
 	if($ENV{'HTTP_ACCEPT_LANGUAGE'}) {
 		$request->header('Accept-Language' => $ENV{'HTTP_ACCEPT_LANGUAGE'});
@@ -104,7 +104,7 @@ sub is_valid {
 	$browser->ssl_opts(verify_hostname => 1, SSL_ca_file => Mozilla::CA::SSL_ca_file());
 	$browser->agent(ref($self));	# Should be CGI::Untaint::Facebook
 	$browser->timeout(10);
-	$browser->max_size(128);
+	# $browser->max_size(128);
 	$browser->env_proxy(1);
 
 	my $webdoc = $browser->simple_request($request);
@@ -135,15 +135,15 @@ sub is_valid {
 		return 0;
 	}
 	my $response = $webdoc->decoded_content();
-	if($response =~ /This content isn't available at the moment/mis) {
-		return 0;
-	}
+	return 0 if $response =~ /page isn['’]t available/mis;
+	return 0 if $response =~ /link you followed may be broken/mis;
+	return 0 if $response =~ /content isn['’]t available/mis;
 	return 1;
 }
 
 =head1 AUTHOR
 
-Nigel Horne, C<< <njh at bandsman.co.uk> >>
+Nigel Horne, C<< <njh at nigelhorne.com> >>
 
 =head1 BUGS
 
